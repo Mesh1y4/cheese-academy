@@ -1,0 +1,682 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header 部分 */
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 1200px;
+}
+
+.header__image {
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.header__text {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    font-size: 21px;
+    color: #222222;
+}
+
+.header__text a {
+    text-decoration: none;
+}
+
+.header__text a:link {
+    color: #222222;
+}
+
+.header__text a:visited {
+    color: #222222;
+}
+
+.header__text a:hover {
+    color: #222222;
+}
+
+.header__text a:active {
+    color: #222222;
+}
+
+/* main 部分 */
+
+#main {
+    margin: auto;
+    text-align: center;
+    background-image: url(../img/mainbg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 200px;
+    padding-bottom: 170px;
+}
+
+.main__message h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.main__message p {
+    font-size: 36px;
+    color: white;
+}
+
+/* section1（ABOUT） 部分 */
+
+#section1 {
+    width: 1200px;
+    text-align: center;
+    background-color: white;
+}
+
+#section1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd61a;
+    padding-top: 60px;
+}
+
+#section1 h3 {
+    font-size: 18px;
+    color: #222222;
+    padding-top: 30px;
+}
+
+#section1 p {
+    font-size: 16px;
+    color: #222222;
+    padding-top: 40px;
+}
+
+#section1 br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+/* section2（ABOUT）部分 */
+
+#section2 {
+    width: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.section2__slide {
+    display: flex;
+    animation: loop-slide 60s infinite linear 0.1s both;
+}
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* section3（COURSE）部分 */
+
+#section3 {
+    width: 1200px;
+    text-align: center;
+    background-color: white;
+}
+
+#section3 h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    padding-top: 60px;
+}
+
+#section3 p {
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+
+#section3 br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+/* section4（COURSE概要）部分 */
+
+#section4 {
+    width: 100%;
+}
+
+.card1 {
+    display: flex;
+    object-fit: cover;
+    width: 1200px;
+    height: 400px;
+}
+
+.card1__image img {
+    width: 600px;
+    height: auto;
+}
+
+.card1__content {
+    width: 600px;
+    height: auto;
+    background-color: #fafafa;
+    align-items: center;
+    padding-top: 120px;
+    padding-right: 120px;
+    padding-bottom: 120px;
+    padding-left: 50px;
+}
+
+.card1 h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 40px;
+    white-space: nowrap;
+}
+
+.card1 p {
+    font-size: 16px;
+    color: #222222;
+    white-space: nowrap;
+}
+
+.card1 br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    height: 400px;
+}
+
+.card2__image img {
+    width: 600px;
+    height: auto;
+}
+
+.card2__content {
+    width: 600px;
+    height: auto;
+    background-color: #fafafa;
+    align-items: center;
+    padding-top: 120px;
+    padding-right: 50px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+}
+
+.card2 h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 40px;
+    white-space: nowrap;
+}
+
+.card2 p {
+    font-size: 16px;
+    color: #222222;
+    white-space: nowrap;
+}
+
+.card2 br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+.card3 {
+    display: flex;
+    object-fit: cover;
+    width: 1200px;
+    height: 400px;
+}
+
+.card3__image img {
+    width: 600px;
+    height: auto;
+}
+
+.card3__content {
+    width: 600px;
+    height: auto;
+    background-color: #fafafa;
+    align-items: center;
+    padding-top: 120px;
+    padding-right: 120px;
+    padding-bottom: 120px;
+    padding-left: 50px;
+}
+
+.card3 h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 40px;
+    white-space: nowrap;
+}
+
+.card3 p {
+    font-size: 16px;
+    color: #222222;
+    white-space: nowrap;
+}
+
+.card3 br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+/* section5（NEWS） 部分 */
+
+#section5 {
+    width: 1200px;
+    text-align: center;
+    background-color: white;
+}
+
+#section5 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd61a;
+    padding-top: 60px;
+}
+
+#section5 h3 {
+    font-size: 18px;
+    color: #222222;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/* section6（NEWS概要） 部分 */
+
+#section6 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 1200px;
+}
+
+.news {
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.news__hover {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.news__hover img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.news__hover:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+}
+
+.news__content {
+    background-color: #fafafa;
+}
+
+.news__content h5 {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    font-size: 16px;
+}
+
+.news__content p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+.news__content br {
+    display: block;
+    content: "";
+    height: 16px;
+}
+
+/* More 部分 */
+
+.button {
+    width: 1200px;
+    height: auto;
+    margin: 60px 0;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button label {
+    width: 300px;
+    height: 60px;
+    margin: 60px 0;
+    padding: 21px 120px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffd61a;
+    color: white;
+    align-items: center;
+}
+
+.button label:hover {
+    background-color: none;
+}
+
+.button input {
+    display: none;
+}
+
+.button .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.button input:checked ~ .hidden_show {
+    padding: 50px 0;
+    height: auto;
+    opacity: 1;
+}
+
+.button.btn--red,
+button a.btn--red {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.button.btn--red:hover,
+button a.btn--red:hover {
+    color: #fff;
+    background-color: #ff6666;
+}
+
+.button a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #ff0000;
+    padding: 8px 99px;
+    text-decoration: none;
+}
+
+.button a:link {
+    color: #fff;
+}
+
+/* section7（ACCESS概要） 部分 */
+
+#section7 {
+    text-align: center;
+    align-items: center;
+    background-color: #fafafa;
+    width: 1200px;
+}
+
+.ACCESS__header h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    white-space: nowrap;
+    padding-top: 60px;
+    padding-bottom: 30px;;
+}
+
+.ACCESS__header p {
+    font-size: 16px;
+    color: #222222;
+    white-space: nowrap;
+    padding-bottom: 60px;
+}
+
+.ACCESS__MAP iframe {
+    width: 1200px;
+    height: 300px;
+}
+
+.ACCESS__content {
+    text-align: start; 
+}
+
+.ACCESS__content ul {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 350px;
+}
+
+.margin-right1 {
+    margin-right: 110px;
+}
+
+.margin-right2 {
+    margin-right: 60px;
+}
+
+.margin-right3 {
+    margin-right: 130px;
+}
+
+.margin-right4 {
+    margin-right: 130px;
+}
+
+.margin-right5 {
+    margin-right: 120px;
+}
+
+.ACCESS__content ul br {
+    display: block;
+    content: "";
+    height: 30px;
+}
+
+/* section8（ACCESS概要） 部分 */
+
+#section8 {
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+.CONTACT__header h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    white-space: nowrap;
+    padding-top: 60px;
+    padding-bottom: 30px;;
+}
+
+.CONTACT__header p {
+    font-size: 16px;
+    color: #222222;
+    white-space: nowrap;
+    padding-bottom: 60px;
+}
+
+.CONTACT__header br {
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+.CONTACT__form {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: start;
+    align-items: center;
+}
+
+.CONTACT__form tr {
+    text-align: left;
+    height: 36;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    justify-content: center;    
+}
+
+.CONTACT__form th {
+    width: 240px;
+    font-size: 14px;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    text-align: left;
+    justify-content: center;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.CONTACT__form label {
+    justify-content: center;
+    font-size: 14px;
+}
+
+.CONTACT__form input {
+    width: 328px;
+    height: 36px;
+    margin: 8px 8px 8px 10px;
+}
+
+.CONTACT__form select {
+    width: 336px;
+    height: 42px;
+    margin: 8px 8px 8px 10px;
+    padding: 1px 2px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.CONTACT__form br {
+    display: block;
+    content: "";
+    height: 16px;
+}
+
+.CONTACT__form ul br {
+    display: block;
+    content: "";
+    height: 24px;
+}
+
+#Entrepreneur {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#job {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#add {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#skill {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* 送信 部分 */
+
+.submit {
+    margin: 30px 0px 140px 0px;
+    text-align: center;
+}
+
+.button2 {
+    border-radius: 10%;          /* 角丸       */
+    font-size: 16pt;        /* 文字サイズ */
+    font-weight: bold;
+    text-align: center;      /* 文字位置   */
+    cursor: pointer;     /* カーソル   */
+    padding: auto;   /* 余白       */
+    background-color: #ffd61a;
+    color: #ffffff;     /* 文字色     */
+    transition: .10s;         /* なめらか変化 */
+}
+
+.button2:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #ffd61a;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+}
+
+/* footer 部分 */
+
+#footer {
+    text-align: center;
+    align-items: center;
+    background-color: #707070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer p {
+    color: white;
+}
